@@ -6,10 +6,20 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #6ad5e7;
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+.maintitle{
+    background-color: rgb(61, 58, 58);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: auto;
+    border-radius: 20px;
+    
 }
 
 nav ul {
@@ -50,11 +60,6 @@ h2 {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.recipe:hover {
-    transform: translateY(-5px);
 }
 
 .recipe img {
@@ -81,4 +86,15 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.logo{
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.pop-out {
+    transform: scale(1.004);
+    transition: transform 0.3s ease-out;
 }
