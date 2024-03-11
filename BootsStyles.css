@@ -165,7 +165,30 @@ footer {
     background-color: aliceblue;
     padding: 20px;
     border-radius: 10px;
+ 
+    max-width: 100%; /* Ensure the logo image does not exceed its original size */
+    width: 80%; /* Set the initial width to 80% of its container */
+    height: auto; /* Maintain aspect ratio */
 }
+    /* Adjust logo size for different screen sizes */
+    @media (min-width: 768px) {
+        .logo {
+            width: 50%; /* Set width to 50% on screens wider than 768px */
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .logo {
+            width: 40%; /* Set width to 40% on screens wider than 992px */
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .logo {
+            width: 30%; /* Set width to 30% on screens wider than 1200px */
+        }
+    }
+    
 
 .pop-out {
     transform: scale(1.004);
