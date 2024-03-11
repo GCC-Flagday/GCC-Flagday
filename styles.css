@@ -22,6 +22,19 @@ header {
     
 }
 
+p{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+li{
+    text-align: center;
+   
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -60,6 +73,11 @@ h2 {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
+}
+
+.goulashimg{
+    width: 400px;
+    height: 400px;
 }
 
 .recipe img {

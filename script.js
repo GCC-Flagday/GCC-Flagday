@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener('DOMContentLoaded', function () {
     // Smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -30,16 +28,22 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelectorAll('.recipe, .recipe-details').forEach(animateOnScroll);
     });
 
-    // Highlight active link in navigation
-    window.addEventListener('scroll', () => {
-        const scrollPos = window.scrollY;
-        document.querySelectorAll('nav a').forEach((link) => {
-            const section = document.querySelector(link.getAttribute('href'));
-            if (section.offsetTop <= scrollPos && section.offsetTop + section.offsetHeight > scrollPos) {
-                link.classList.add('active');
-            } else {
-                link.classList.remove('active');
-            }
+    // Move elements on mouse move
+    const moveElements = (e) => {
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+
+        document.querySelectorAll('.recipe').forEach((recipe) => {
+            const recipeX = recipe.getBoundingClientRect().left + recipe.offsetWidth / 2;
+            const recipeY = recipe.getBoundingClientRect().top + recipe.offsetHeight / 2;
+
+            const distanceX = (mouseX - recipeX) * 0.02;
+            const distanceY = (mouseY - recipeY) * 0.02;
+
+            recipe.style.transform = `translate(${distanceX}px, ${distanceY}px)`;
         });
-    });
+    };
+
+    // Event listener for mouse move
+    document.addEventListener('mousemove', moveElements);
 });
