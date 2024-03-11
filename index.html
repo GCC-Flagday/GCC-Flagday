@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>International Recipes - Flag Day!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="BootsStyles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -17,40 +22,54 @@
     <main>
         <section id="Hungarian">
             <h2>Hungarian</h2>
-            <div class="recipe">
-                <img class="goulashimg" src="hgoulash.png" alt="Goulash">
-                <div class="recipe-details">
-                    <h3>Hungarian Goulash</h3>
-                    <p>Hungarian goulash is a hearty stew originating from Hungary, typically made with tender chunks of beef, onions, paprika, and other spices, simmered to perfection for a comforting and flavorful dish.</p>
-                    <h4>Ingredients;</h4>
-                    <ul>
-                        <p>Ingredients
+    <div class="recipe">
+        <img class="goulashimg" src="hgoulash.png" alt="Goulash">
+        <h3>Hungarian Goulash</h3>
+                <p class="descriptor">Hungarian goulash is a hearty stew originating from Hungary,<br> typically made with tender chunks of beef, onions, paprika, and other spices, simmered to perfection for a comforting and flavorful dish.</p>
+                
+        <div class="recipe-details row">
+            <div class="col-md-6">
+                <ul class="ingredients">
+                    <h4>Ingredients:</h4>
                     <li>4 tbsp olive oil</li>
-                    <li>1 large onion chopped </li>
-                    <li>2 cloves of garlin, finely chopped</li>
-                    <li>700g of stewing steak,cut into chunks</li>
-                    <li>75mil of dry white wine</li>
+                    <li>1 large onion chopped</li>
+                    <li>2 cloves of garlic, finely chopped</li>
+                    <li>700g of stewing steak, cut into chunks</li>
+                    <li>75ml of dry white wine</li>
                     <li>1 green pepper, deseeded and chopped finely</li>
                     <li>1 red pepper, deseeded and chopped finely</li>
                     <li>Freshly ground black pepper</li>
                     <li>2 tbsp of tomato puree</li>
-                    <li>2 diced tomatos </li>
+                    <li>2 diced tomatoes</li>
                     <li>300ml beef stock</li>
-                    <li>1tsp of italian seasoning</li>
-                    <li>2 tbsp of paprika </li>
+                    <li>1 tsp of Italian seasoning</li>
+                    <li>2 tbsp of paprika</li>
                     <li>30g plain flour</li>
                     <li>150ml soured cream</li>
                     <li>Freshly chopped parsley for serving</li>
-                        </p>
-                    </ul>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="directions">
+                    <h4>Directions:</h4>
+                    <ol>
+                        <li>Heat oven to 160°C / gas 3.</li>
+                        <li>Heat 1 tbsp of olive oil in a flameproof casserole dish, or heavy saucepan, sprinkle the 700g stewing steak chunks with 30g plain flour, and brown well, do it over three batches and use 1 tbsp of olive oil, each time. Set browned meat aside.</li>
+                        <li>1 tbsp of oil to the casserole dish, followed by 1 large thinly sliced onion, 2 finely chopped garlic cloves, 1 green pepper, 1 red pepper, both finely sliced, fry until softened around 5-10 minutes.</li>
+                        <li>Return the beef to the pan with 2 tbsp tomato puree, and 2 tbsp paprika, cook stirring for 2 minutes.</li>
+                        <li>Add in 2 diced tomatoes, 75 ml white wine and 300 ml beef stock, cover and bake in the oven for 90 minutes to 2 hours or cover it and cook it on the hob for an hour and remove the ladle after 45 minutes.</li>
+                        <li>Sprinkle over 2 tbsp flat leaf parsley leaves, season well with salt and freshly ground pepper, stir in 150 ml of soured cream and serve.</li>
+                    </ol>
                 </div>
             </div>
+        </div>
+    </div>
             <div class="recipe">
                 <img src="example-img.jpg" alt="Margherita Pizza">
-                <div class="recipe-details">
-                    <h3>Margherita Pizza</h3>
-                    <p>A classic pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves.</p>
-                </div>
+                    <div class="recipe-details">
+                        <h3>Margherita Pizza</h3>
+                        <p>A classic pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves.</p>
+                    </div>
             </div>
             <!-- Add more Hungarian recipes here -->
         </section>
@@ -58,18 +77,18 @@
             <h2>Mexican Recipes</h2>
             <div class="recipe">
                 <img src="example-img.jpg" alt="Guacamole">
-                <div class="recipe-details">
+                    <div class="recipe-details">
                     <h3>Guacamole</h3>
                     <p>A creamy dip made from mashed avocados, onions, tomatoes, lime juice, and cilantro.</p>
-                </div>
+                    </div>
             </div>
-            <div class="recipe">
-                <img src="example-img.jpg" alt="Chicken Enchiladas">
-                <div class="recipe-details">
-                    <h3>Chicken Enchiladas</h3>
-                    <p>Tortillas filled with shredded chicken, cheese, and enchilada sauce, then baked until bubbly.</p>
+                <div class="recipe">
+                    <img src="example-img.jpg" alt="Chicken Enchiladas">
+                    <div class="recipe-details">
+                        <h3>Chicken Enchiladas</h3>
+                        <p>Tortillas filled with shredded chicken, cheese, and enchilada sauce, then baked until bubbly.</p>
+                 </div>
                 </div>
-            </div>
             <!-- Add more Mexican recipes here -->
         </section>
         <section id="indian">

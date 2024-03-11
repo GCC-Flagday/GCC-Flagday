@@ -1,49 +1,28 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Smooth scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
+// script.js
 
-            const targetSection = document.querySelector(this.getAttribute('href'));
-            targetSection.scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
+$(document).ready(function () {
+    // Smooth scrolling with Bootstrap scrollspy
+    $('body').scrollspy({ target: '#navbarNav' });
+
+    // Highlight active link in navigation
+    $('nav a').on('click', function (e) {
+        $('nav').find('a.active').removeClass('active');
+        $(this).addClass('active');
     });
 
-    // Pop-out animation on scroll
-    const animateOnScroll = (element) => {
-        const windowHeight = window.innerHeight;
-        const elementTop = element.getBoundingClientRect().top;
-
-        if (elementTop < windowHeight * 0.75) {
-            element.classList.add('pop-out');
-        } else {
-            element.classList.remove('pop-out');
-        }
+    // Animate elements on scroll
+    const animateOnScroll = () => {
+        $('.recipe, .recipe-details').each(function () {
+            const position = $(this).offset().top;
+            const windowHeight = $(window).height();
+            if (position < windowHeight * 0.8) {
+                $(this).addClass('animate');
+            }
+        });
     };
+
+    animateOnScroll(); // Initial animation
 
     // Event listener for scrolling
-    window.addEventListener('scroll', () => {
-        document.querySelectorAll('.recipe, .recipe-details').forEach(animateOnScroll);
-    });
-
-    // Move elements on mouse move
-    const moveElements = (e) => {
-        const mouseX = e.clientX;
-        const mouseY = e.clientY;
-
-        document.querySelectorAll('.recipe').forEach((recipe) => {
-            const recipeX = recipe.getBoundingClientRect().left + recipe.offsetWidth / 2;
-            const recipeY = recipe.getBoundingClientRect().top + recipe.offsetHeight / 2;
-
-            const distanceX = (mouseX - recipeX) * 0.02;
-            const distanceY = (mouseY - recipeY) * 0.02;
-
-            recipe.style.transform = `translate(${distanceX}px, ${distanceY}px)`;
-        });
-    };
-
-    // Event listener for mouse move
-    document.addEventListener('mousemove', moveElements);
+    $(window).on('scroll', animateOnScroll);
 });
