@@ -39,6 +39,10 @@ header {
     padding: 0 10px; /* Adjust padding as needed */
 }
 
+.Adobo{
+    font-size: larger;
+}
+
 .descriptor{
     text-align: center;
 }
