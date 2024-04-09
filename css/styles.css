@@ -197,3 +197,15 @@ footer p {
 #german h2{
     color: #f4f4f4;
 }
+.logo {
+    max-width: 100%; /* Ensure the logo image does not exceed its original size */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the logo is centered */
+    margin: 0 auto; /* Center the logo horizontally */
+}
+
+@media (max-width: 767px) {
+    .logo {
+        width: 70%; /* Set width to 70% on screens smaller than 768px */
+    }
+}
