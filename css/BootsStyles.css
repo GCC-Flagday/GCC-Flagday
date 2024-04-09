@@ -198,3 +198,15 @@ footer {
     transform: scale(1.004);
     transition: transform 0.3s ease-out;
 }
+
+.recipe-details {
+    display: flex; /* Use flexbox layout */
+}
+
+.ingredients {
+    padding-right: 20px; /* Add some space between ingredients and directions */
+}
+
+.directions {
+    padding-left: 20px; /* Add some space between directions and ingredients */
+}
