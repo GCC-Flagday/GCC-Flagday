@@ -58,3 +58,59 @@ function debounce(func, wait, immediate) {
         if (callNow) func.apply(context, args);
     };
 }
+// script.js
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Toggle visibility of recipe details
+document.querySelectorAll('.recipe h3').forEach(title => {
+    title.addEventListener('click', function() {
+        this.nextElementSibling.classList.toggle('hidden');
+    });
+});
+
+// Make the navbar sticky when scrolling
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('header');
+    if (window.scrollY > navbar.offsetHeight) {
+        navbar.classList.add('sticky');
+    } else {
+        navbar.classList.remove('sticky');
+    }
+});
+// script.js
+
+// Function to check if an element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Add animation class to elements in viewport
+function animateOnScroll() {
+    document.querySelectorAll('.expanding').forEach(element => {
+        if (isInViewport(element)) {
+            element.classList.add('expanded');
+        }
+    });
+}
+
+// Run animation on page load
+animateOnScroll();
+
+// Run animation on scroll
+window.addEventListener('scroll', animateOnScroll);
