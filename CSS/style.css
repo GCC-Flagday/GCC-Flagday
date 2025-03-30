@@ -14,6 +14,19 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+h1 {
+    color: #333;
+    display: inline-flex;
+    padding: 15px;
+    gap: 10px;
+    font-size: 36px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    background: linear-gradient(120deg, #ffffff, #55e6e6);
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -107,4 +120,22 @@ footer {
     font-weight: bold;
     font-size: 20px;
     text-decoration: none;
+}
+
+.link-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
 }

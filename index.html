@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flag Week Hub</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        .link-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .link-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,7 +40,7 @@
             <img src="JS/images/GCC01.jpg" alt="">
             <img src="JS/images/IntroSlide.png" alt="">
             <img src="JS/images/ireland.png" alt="Test Flag">
-            <video autoplay loop mutedplaysinline poster="JS/images/Slide1.jpg" class="gallery-video">
+            <video autoplay loop muted playsinline poster="JS/images/Slide1.jpg" class="gallery-video">
                 <source src="JS/images/Flags.mov" type="video/quicktime">
                 Your browser does not support the video tag.
             </video>
@@ -37,6 +54,20 @@
         <ul id="links-list">
             <!-- JS will populate this -->
         </ul>
+        <div class="link-container">
+            <div class="link-box">
+                <h3 style="color: rgb(0, 81, 255);">National Flag History</h3>
+                <p>Explore the rich history of our national flag and its significance.</p>
+            </div>
+            <div class="link-box">
+                <h3 style="color: rgb(0, 81, 255);">Flag Etiquette</h3>
+                <p>Learn the proper ways to handle and display the flag.</p>
+            </div>
+            <div class="link-box">
+                <h3 style="color: rgb(0, 81, 255);">Flag Week Events</h3>
+                <p>Find out about events happening during Flag Week.</p>
+            </div>
+        </div>
     </section>
 
     <footer class="page-wrapper">
