@@ -3,38 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/anthem_style.css">
     <title>Anthem Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #0078D4;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        a:hover {
-            background-color: #005A9E;
-        }
-    </style>
 </head>
 <body>
+    <h1>Create an Anthem!</h1>
     <main>
-        <img src="JS/images/School-20Anthem_page-0001.jpg" alt="Main Image">
-        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=28jHaGQeFEWbsEtAoTxAKxI0P2PrdtNPnoBWJ8teeIRUM1RGWDlUVDAwWjlVVEREQjc5QTYzQTc2Vy4u" target="_blank">
+        <img src="JS/images/School-20Anthem_page-0001.jpg" alt="Main Image" >
+        
+        <!-- Form Button inside Main Content (Fixed Position) -->
+        <a class="form" href="https://forms.office.com/Pages/ResponsePage.aspx?id=28jHaGQeFEWbsEtAoTxAKxI0P2PrdtNPnoBWJ8teeIRUM1RGWDlUVDAwWjlVVEREQjc5QTYzQTc2Vy4u">
             Fill Out the Form
         </a>
+        
+        <div class="content-boxes">
+            <div class="anthem-box">
+                <h2>Why Create a School Anthem?</h2>
+                <p>
+                    A school anthem is more than just a song—it’s a powerful symbol of unity, pride, and tradition. 
+                    It captures the essence of the school, its values, and its spirit. By contributing your ideas, 
+                    you help create something that will inspire students for generations to come. 
+                    Let’s make something memorable together!
+                </p>
+            </div>
+
+            <div class="flag-redesign-box">
+                <h2>School Flag Redesign</h2>
+                <div class="flag-content">
+                    <p>
+                        We are excited to announce a redesign of our school flag, showcasing the values and traditions that define us. 
+                        Help us by contributing your ideas and creativity to make it a symbol we can all be proud of <a href="flag_redesign.html" style="color: blue;">here</a>.
+                    </p>
+
+                    <!-- Back to Homepage Button inside Flag Redesign Box -->
+                    <div class="back-button-box">
+                        <a href="index.html" class="back-button">Back to Homepage</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
+<script src="JS/anthem_script.js"></script>
 </html>
