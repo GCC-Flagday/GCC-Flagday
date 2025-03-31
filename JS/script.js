@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cultureLinks = [
         { text: "New GCC Anthem!", url: "anthem.html" },
         { text: "GCC Flag Redesign!", url: "flag_redesign.html" },
-        { text: "Flag Week Quiz!", url: "https://www.japan.travel/" }
+        { text: "Flag Week Quiz!", url: "quiz.html" }
     ];
 
     cultureLinks.forEach(link => {
