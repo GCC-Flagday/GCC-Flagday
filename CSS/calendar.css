@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #001eff, #ffffff);
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: #20379b;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: black;
+    font-size: 32px;
+    background: linear-gradient(120deg, #ffffff, #55e6e6);
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Calendar Styling */
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.calendar {
+    width: 90%;
+    max-width: 600px;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.calendar th, .calendar td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+}
+
+.calendar th {
+    background: #0044ff;
+    color: white;
+    font-weight: bold;
+}
+
+.calendar td {
+    background: rgba(255, 255, 255, 0.9);
+    min-width: 60px;
+    height: 80px;
+}
+
+.date {
+    font-weight: bold;
+    font-size: 20px;
+    color: #20379b;
+}
+
+.event {
+    display: block;
+    background: #ffdd57;
+    color: #333;
+    font-size: 14px;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.event1 {
+    display: block;
+    background: #5f85ee;
+    color: #333;
+    font-size: 14px;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+/* Back Button */
+.back-button {
+    background: #0044ff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: 10px auto 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+    background: #0026b3;
+    transform: scale(1.05);
+}
+
+footer {
+    background: #0044ff;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
