@@ -131,3 +131,22 @@ footer {
 .submit-button:hover {
     background-color: #005A9E;
 }
+
+.back-button {
+    background: #0044ff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: 10px auto 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+    background: #0026b3;
+    transform: scale(1.05);
+}

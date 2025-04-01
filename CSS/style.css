@@ -51,22 +51,7 @@ nav ul li:hover {
     text-decoration: underline;
 }
 
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background: white;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    top: 25px;
-    z-index: 1000;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-#gallery h2{
+#gallery h2 {
     background-color: rgba(255, 255, 255, 0.493);
     gap: 20px;
     font-size: 40px;
@@ -78,32 +63,31 @@ nav ul li:hover {
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  
-    gap: 15px;  
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
     padding: 20px;
 }
 
 .image-grid img, .image-grid video {
-    width: 100%; 
-    height: auto; 
-    object-fit: contain;  
-    border-radius: 10px;  
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
 }
 
-@media (max-width: 768px) {  
+@media (max-width: 768px) {
     .image-grid {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
     .image-grid {
-        grid-template-columns: repeat(1, 1fr); 
+        grid-template-columns: repeat(1, 1fr);
     }
 }
-
 
 .image-grid img:hover, .image-grid video:hover {
     transform: scale(1.05);
@@ -132,8 +116,10 @@ footer {
     line-height: 25px;
     justify-content: center;
     list-style: none;
-    display: inline-flex;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 0;
 }
 
 #links a {
@@ -141,9 +127,10 @@ footer {
     font-weight: bold;
     font-size: 20px;
     text-decoration: none;
+    margin: 5px 15px;
 }
 
-#links a:hover{
+#links a:hover {
     text-decoration: underline;
     font-size: 22px;
     color: #ffdd57;
@@ -181,8 +168,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 180px;
-    
+    height: 230px;
 }
 
 .link-box h3 {
@@ -199,7 +185,7 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .link-box {
         width: 90%;
         height: auto;

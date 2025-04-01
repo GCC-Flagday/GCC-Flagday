@@ -115,15 +115,20 @@ h1 {
 }
 
 .back-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #20379b;
+    background: #2b80c5;
     color: white;
-    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: 10px auto 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .back-button:hover {
-    background-color: #005A9E;
+    background: #0026b3;
+    transform: scale(1.05);
 }
