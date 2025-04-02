@@ -1,0 +1,144 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode {
+    background: linear-gradient(135deg, #001eff, #ffffff);
+    color: #333;
+}
+
+body.dark-mode {
+    background: #121212;
+    color: #f0f0f0;
+}
+
+header, footer {
+    background: #20379b;
+    color: white;
+    padding: 10px;
+}
+
+header.dark-mode, footer.dark-mode {
+    background: #444;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffdd57;
+}
+
+/* Image Slider */
+.image-slider {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.image-slider .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-slider img, .gallery-video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.slider-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slider-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slider-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Link Section */
+.link-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.link-box {
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.link-box:hover {
+    transform: scale(1.05);
+    border-color: #ffdd57;
+}
+
+.link-box h3 a {
+    color: rgb(0, 81, 255);
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link-box h3 a:hover {
+    color: #ffdd57;
+}
+
+/* Button for Dark/Light Mode */
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ffdd57;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.toggle-btn:hover {
+    background-color: #ffd700;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
