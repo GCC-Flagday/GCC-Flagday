@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link rel="stylesheet" href="CSS/gallery.css">
+    <title>Enhanced Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css">
 </head>
 <body>
     <header>
@@ -14,29 +14,10 @@
         </nav>
     </header>
 
-    <section class="gallery-container">
-        <div class="slider">
-            <div class="slides">
-                <div class="slide"><img src="JS/images/GCC01.jpg" alt="Image 1"></div>
-                <div class="slide"><img src="JS/images/IntroSlide.png" alt="Image 2"></div>
-                <div class="slide"><img src="JS/images/ireland.png" alt="Image 3"></div>
-                <div class="slide"><video autoplay loop muted playsinline poster="JS/images/Slide1.jpg">
-                    <source src="JS/images/Flags.mov" type="video/quicktime">
-                    Your browser does not support the video tag.
-                </video></div>
-                <div class="slide"><img src="JS/images/NewFlag.png" alt="Image 4"></div>
-                <div class="slide"><img src="JS/images/School-20Anthem_page-0001.jpg" alt="Image 5"></div>
-                <div class="slide"><img src="JS/images/NewFlag.png" alt="Image 4"></div>
-                <div class="slide"><img src="JS/images/School-20Anthem_page-0001.jpg" alt="Image 5"></div>
-                <div class="slide"><img src="JS/images/GCC01.jpg" alt="Image 1"></div>
-                <div class="slide"><img src="JS/images/IntroSlide.png" alt="Image 2"></div>
-                <div class="slide"><img src="JS/images/ireland.png" alt="Image 3"></div>
-            </div>
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
-        </div>
+    <section id="galleries">
+        <!-- Galleries will be dynamically populated here -->
     </section>
 
-    <script src="JS/gallery.js"></script>
+    <script src="js/gallery.js"></script>
 </body>
 </html>

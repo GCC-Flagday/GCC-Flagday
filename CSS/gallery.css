@@ -1,18 +1,19 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
-    background: linear-gradient(to bottom, #3a6ff8, #98b6ff);
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
     margin: 0;
     padding: 0;
     color: white;
 }
 
 header {
-    background: #2541b2;
+    background: #162447;
     color: white;
-    padding: 15px;
-    font-size: 24px;
+    padding: 20px;
+    font-size: 26px;
     font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -25,71 +26,67 @@ nav a {
     font-size: 18px;
     margin-left: 20px;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 18px;
-    background: #2541b2;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-button:hover {
-    background: #1e3492;
-}
-
-#nameInput {
-    margin-top: 10px;
-    padding: 8px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+nav a:hover {
+    color: #ffcc00;
 }
 
 .gallery-container {
-    max-width: 800px;
-    margin: auto;
+    max-width: 80%;
+    margin: 40px auto;
     overflow: hidden;
     position: relative;
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .slider {
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width: 100%;
 }
 
 .slide {
     min-width: 100%;
     box-sizing: border-box;
+    transition: transform 0.5s ease-in-out;
 }
 
 img, video {
-    width: 100%;
+    width: 90%;
     height: auto;
     border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 button.prev, button.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     border: none;
-    padding: 10px;
+    padding: 12px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 24px;
     border-radius: 50%;
+    transition: background 0.3s;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 button.prev { left: 10px; }
