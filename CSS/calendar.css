@@ -97,6 +97,17 @@ main {
     font-weight: bold;
 }
 
+.eventX {
+    display: block;
+    background: #881eb9;
+    color: #333;
+    font-size: 14px;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
 /* Responsive Calendar */
 @media (max-width: 768px) {
     .calendar {

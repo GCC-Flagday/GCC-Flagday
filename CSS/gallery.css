@@ -1,10 +1,21 @@
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    background: linear-gradient(120deg, #19305c, #365fa5);
     margin: 0;
     padding: 0;
     color: white;
+}
+
+h1{
+    background-color:#2a5298;
+    padding: 10px;
+    gap: 10%;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 50px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
 }
 
 header {
@@ -21,8 +32,9 @@ nav {
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
+    color: rgb(8, 250, 8);
+    
+    text-decoration: underline;
     font-size: 18px;
     margin-left: 20px;
     font-weight: bold;
@@ -30,7 +42,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffcc00;
+    color: #ffffff;
 }
 
 .gallery-container {
@@ -42,8 +54,16 @@ nav a:hover {
 }
 
 h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    color: #333;
+    display: inline-flex;
+    padding: 15px;
+    gap: 10px;
+    font-size: 36px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #0e5e12,#ffffff, #af7f37);
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .slider {

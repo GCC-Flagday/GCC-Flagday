@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
         { text: "Flag Week Calendar", url: "calendar.html" },
         { text: "Flag Week Itinerary", url: "events.html" },
         { text: "Gallery", url: "gallery.html"},
-        { text: "Testing", url: "test/test.html"},
     ];
 
     cultureLinks.forEach(link => {

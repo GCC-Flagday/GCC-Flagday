@@ -29,9 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 "JS/images/14.jpg",
                 "JS/images/15.jpg",
                 "JS/images/16.jpg",
-                "JS/images/17.jpg",
-            ],
-            video: "images/.mp4"
+                "JS/images/17.jpg"
+            ]
         }
     ];
 
@@ -63,18 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const videoSlide = document.createElement("div");
         videoSlide.classList.add("slide");
-        const video = document.createElement("video");
-        video.autoplay = true;
-        video.loop = true;
-        video.muted = true;
-        video.playsInline = true;
-        video.poster = "images/Slide1.jpg";
-        const source = document.createElement("source");
-        source.src = gallery.video;
-        source.type = "video/mp4";
-        video.appendChild(source);
-        videoSlide.appendChild(video);
-        slides.appendChild(videoSlide);
+        
 
         slider.appendChild(slides);
 

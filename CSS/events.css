@@ -1,4 +1,4 @@
-/* General Page Styling */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -24,7 +24,6 @@ h1 {
     display: inline-block;
 }
 
-/* Timeline Styling */
 .timeline {
     max-width: 600px;
     margin: 40px auto;
@@ -59,10 +58,8 @@ h3 {
 
 p {
     font-size: 16px;
-    color: #333;
 }
 
-/* Back Button */
 .back-button {
     background: #0044ff;
     color: white;
@@ -82,7 +79,7 @@ p {
     transform: scale(1.05);
 }
 
-/* Footer */
+
 footer {
     background: #0044ff;
     color: white;
