@@ -68,7 +68,9 @@ h2 {
 
 .slider {
     position: relative;
-    width: 100%;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
     overflow: hidden;
 }
 
@@ -80,18 +82,22 @@ h2 {
 
 .slide {
     min-width: 100%;
-    box-sizing: border-box;
-    transition: transform 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 img, video {
-    width: 90%;
-    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-button.prev, button.next {
+/* Centered buttons */
+button.prev,
+button.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -103,9 +109,11 @@ button.prev, button.next {
     font-size: 24px;
     border-radius: 50%;
     transition: background 0.3s;
+    z-index: 2;
 }
 
-button.prev:hover, button.next:hover {
+button.prev:hover,
+button.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 

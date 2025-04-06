@@ -1,35 +1,60 @@
 document.addEventListener("DOMContentLoaded", () => {
     const galleries = [
         {
-            year: "2023",
+            year: "2022",
             images: [
-                "JS/images/GCC01.jpg",
-                "JS/images/IntroSlide.png",
-                "JS/images/ireland.png",
-                "JS/images/NewFlag.png",
-                "JS/images/School-20Anthem_page-0001.jpg",
-                
+                "JS/images/2022/1.jpg",
+                "JS/images/2022/2.jpg",
+                "JS/images/2022/3.jpg",
+                "JS/images/2022/4.jpg",
+                "JS/images/2022/5.jpg",
+                "JS/images/2022/6.jpg",
+                "JS/images/2022/7.jpg",
+                "JS/images/2022/8.jpg",
+                "JS/images/2022/9.jpg",
+                "JS/images/2022/10.jpg",
+                "JS/images/2022/11.jpg",
+                "JS/images/2022/12.jpg",
+                "JS/images/2022/13.jpg",
+                "JS/images/2022/14.jpg",
+                "JS/images/2022/15.jpg",
+                "JS/images/2022/16.jpg",
+                "JS/images/2022/17.jpg",
+                "JS/images/2022/18.jpg",
+                "JS/images/2022/19.jpg",
+                "JS/images/2022/20.jpg",
+                "JS/images/2022/21.jpg",
+                "JS/images/2022/22.jpg",
+                "JS/images/2022/23.jpg",
+                "JS/images/2022/24.jpg",
+                "JS/images/2022/25.jpg"
             ],
-            video: "JS/images/Flags.mov"
+            video: "JS/images/2022/Flags.mov"
         },
         {
             year: "2024",
             images: [
-                "JS/images/2.jpg",
-                "JS/images/3.jpg",
-                "JS/images/5.jpg",
-                "JS/images/6.jpg",
-                "JS/images/7.jpg",
-                "JS/images/8.jpg",
-                "JS/images/9.jpg",
-                "JS/images/10.jpg",
-                "JS/images/11.jpg",
-                "JS/images/12.jpg",
-                "JS/images/13.jpg",
-                "JS/images/14.jpg",
-                "JS/images/15.jpg",
-                "JS/images/16.jpg",
-                "JS/images/17.jpg"
+                "JS/images/2024/2.jpg",
+                "JS/images/2024/3.jpg",
+                "JS/images/2024/5.jpg",
+                "JS/images/2024/6.jpg",
+                "JS/images/2024/7.jpg",
+                "JS/images/2024/8.jpg",
+                "JS/images/2024/9.jpg",
+                "JS/images/2024/10.jpg",
+                "JS/images/2024/11.jpg",
+                "JS/images/2024/12.jpg",
+                "JS/images/2024/13.jpg",
+                "JS/images/2024/14.jpg",
+                "JS/images/2024/15.jpg",
+                "JS/images/2024/16.jpg",
+                "JS/images/2024/17.jpg",
+                "JS/images/2024/18.png",
+                "JS/images/2024/19.jpg",
+                "JS/images/2024/20.jpg",
+                "JS/images/2024/21.jpg",
+                "JS/images/2024/22.jpg"
+
             ]
         }
     ];
