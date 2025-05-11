@@ -1,77 +1,111 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #001eff, #ffffff);
+    background: linear-gradient(to bottom, #3a6ff8, #c9deff);
     color: #333;
     text-align: center;
+    line-height: 1.6;
 }
 
 header {
     background: #20379b;
-    padding: 20px;
     color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
-    font-size: 32px;
-    background: linear-gradient(120deg, #30885c, #0d301d);
-    border-radius: 10px;
-    padding: 10px;
-    display: inline-block;
+    margin: 0;
+    font-size: 36px;
+    background: linear-gradient(to right, #ffffff, #55e6e6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
 }
 
 main {
-    padding: 20px;
-}
-
-.content {
-    max-width: 800px;
-    margin: auto;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.flag-image {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 10px;
-    margin: 10px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.6;
+    padding: 40px 20px;
 }
 
 .back-button {
-    background: #0044ff;
+    background: linear-gradient(to right, #0044ff, #55e6e6);
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 16px;
+    font-weight: bold;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
-    display: block;
-    margin: 10px auto 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 20px auto 40px;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .back-button:hover {
-    background: #0026b3;
     transform: scale(1.05);
+    background: linear-gradient(to right, #0033cc, #39c7c7);
+}
+
+.content {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    text-align: left;
+}
+
+.main_title{
+    font-size: 50px;
+    text-decoration: underline;
+    max-width: 900px;
+    margin: auto;
+    color: #333;
+    padding: 30px;
+    text-align: center;
+}
+
+.flag-image {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.text-block p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.text-block strong {
+    color: #0044ff;
+}
+
+.green {
+    color: #0b8800;
+    font-weight: bold;
+}
+
+.orange {
+    color: #ff7a00;
+    font-weight: bold;
+}
+
+.white {
+    color: #777;
+    font-weight: bold;
 }
 
 footer {
     background: #0044ff;
     color: white;
-    padding: 15px;
-    margin-top: 20px;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
 }

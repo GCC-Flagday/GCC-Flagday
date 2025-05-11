@@ -56,6 +56,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 "JS/images/2024/22.JPG"
 
             ]
+        },
+        {
+            year: "2025",
+            images: [
+                 "JS/images/ComingSoon.jpg",
+            ],
         }
     ];
 
