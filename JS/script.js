@@ -21,3 +21,19 @@ document.addEventListener("DOMContentLoaded", () => {
         linksList.appendChild(li);
     });
 });
+
+
+  function showPopup() {
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("popup-overlay").style.display = "block";
+  }
+
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+    document.getElementById("popup-overlay").style.display = "none";
+    sessionStorage.setItem("popupShown", "true");
+  }
+
+  if (!sessionStorage.getItem("popupShown")) {
+    window.addEventListener("load", showPopup);
+  }
